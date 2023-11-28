@@ -5,8 +5,8 @@
 #
 
 CC = gcc
-CFLAGS = -g -Wall -std=c17
-TARGETS = thread
+CFLAGS = -g -Wall -std=c17 -fsanitize=thread 
+TARGETS = process
 
 # We need to pass into a library flag -lpthread. 
 # -l<name> tries to find a lib<name>.so (a shared object, or, in other words, a compiled library) 
